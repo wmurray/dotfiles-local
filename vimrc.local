@@ -1,0 +1,37 @@
+let base16colorspace=256
+
+let &t_ut=''
+
+set t_co=256
+set background=dark
+set colorcolumn=80
+colorscheme nord
+
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-prettier',
+  \ 'coc-eslint'
+\]
+
+
+nmap <silent> <Leader>d <Plug>(coc-type-definition)
+nmap <silent> <leader>f <Plug>(coc-definition)
+
+nnoremap <leader>r :source $MYVIMRC<cr>
+nnoremap <leader>h :e %:h
+
+" Tab complete with COC
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
