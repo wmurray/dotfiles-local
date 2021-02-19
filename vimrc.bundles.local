@@ -6,6 +6,8 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'jparise/vim-graphql'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 UnPlug 'fatih/vim-go'
 UnPlug 'elixir-lang/vim-elixir'
 UnPlug 'slim-template/vim-slim'

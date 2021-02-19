@@ -1,2 +1,5 @@
-
 . /usr/local/opt/asdf/asdf.sh
+
+export PATH="./bin:$(yarn global bin):$PATH"
+
+ulimit -n 1024
