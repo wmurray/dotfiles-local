@@ -16,3 +16,4 @@ UnPlug 'tpope/vim-fugitive'
 UnPlug 'tpope/vim-rhubarb'
 UnPlug 'tpope/vim-bundler'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'mogelbrod/vim-jsonpath'
