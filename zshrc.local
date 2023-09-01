@@ -1,5 +1,10 @@
-. /usr/local/opt/asdf/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
-export PATH="./bin:$(yarn global bin):$PATH"
+# Fix issue running wharf - https://github.com/rails/rails/issues/38560
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+export ANDROID_SDK="$HOME/Library/Android/sdk"
+# export PATH="./bin:$(yarn global bin):$PATH"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 
 ulimit -n 1024
