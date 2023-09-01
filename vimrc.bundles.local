@@ -1,5 +1,5 @@
-Plug 'chriskempson/base16-vim'
-Plug 'arcticicestudio/nord-vim'
+UnPlug 'chriskempson/base16-vim'
+UnPlug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
@@ -17,3 +17,7 @@ UnPlug 'tpope/vim-rhubarb'
 UnPlug 'tpope/vim-bundler'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'mogelbrod/vim-jsonpath'
+Plug 'findango/vim-mdx'
+Plug 'tpope/vim-projectionist'
+UnPlug 'prettier/vim-prettier'
+
